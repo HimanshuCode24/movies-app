@@ -1,28 +1,28 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 
-const SearchBar = ({ onSearch }) => {
-  const [query, setQuery] = useState('');
+// const SearchBar = ({ onSearch }) => {
+//   const [query, setQuery] = useState('');
 
-  const handleChange = (event) => {
-    setQuery(event.target.value);
-  };
+//   const handleChange = (event) => {
+//     setQuery(event.target.value);
+//   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    onSearch(query);
-  };
+//   const handleSubmit = (event) => {
+//     event.preventDefault();
+//     onSearch(query);
+//   };
 
-  return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        placeholder="Search for movies..."
-        value={query}
-        onChange={handleChange}
-      />
-      <button type="submit">Search</button>
-    </form>
-  );
-};
+//   return (
+//     <form onSubmit={handleSubmit}>
+//       <input
+//         type="text"
+//         placeholder="Search for movies..."
+//         value={query}
+//         onChange={handleChange}
+//       />
+//       <button type="submit">Search</button>
+//     </form>
+//   );
+// };
 
-export default SearchBar;
+// export default SearchBar;
